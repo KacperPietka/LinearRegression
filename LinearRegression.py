@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 file_name = input('Enter your file name with .csv\nfor example: data.csv\nFile: ')
 
-data = pd.read_csv(f'./LinearRegression/{file_name}', sep=',')
+data = pd.read_csv(f'./{file_name}', sep=',')
 
 def gradient(a, b, data_set, learning_rate):
     n = len(data_set)
